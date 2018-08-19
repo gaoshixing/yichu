@@ -1,0 +1,10 @@
+{
+  "static": {
+    "css": {
+      "css/dist.css": [
+        "css/index.less",
+        "css/public.less"
+      ]
+    }
+  }
+}

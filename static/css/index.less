@@ -1,0 +1,162 @@
+@import "config.less";
+.page-index {
+    background: #1e1e1e;
+    min-height: 600px;
+    .banner {
+        width: 100%;
+        .banner-imgs {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            .dots-1 {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                width: 300px;
+                margin: 0 0 0 -150px;
+                padding: 0;
+                text-align: center;
+            }
+            .dots-1 li {
+                display: inline-block;
+                *display: inline;
+                *zoom: 1;
+                width: 10px;
+                height: 10px;
+                margin: 0 5px;
+                border-radius: 50%;
+                border: 1px solid @textColor;
+                background: @textColor;
+                cursor: pointer;
+            }
+            .dots-1 li:hover,
+            .dots-1 li.active {
+                background: #000;
+            }
+            ul {
+                overflow: hidden;
+                margin: 0;
+                zoom: 1;
+                li {
+                    float: left;
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                    &:first-child {
+                        display: block;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+.content {
+        width: @mainWidth;
+        margin: 0 auto;
+        margin-bottom: 200px;
+        .content-t {
+            text-align: center;
+            color: #333333;
+            margin-top: 59px;
+            margin-bottom: 30px;
+        }
+        .content-inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .task, .taskTeacher {
+                font-size: 12px;
+                min-width: 135px;
+                text-align: center;
+                a {
+                    display: block;
+                    margin-top: 15px;
+                }
+            }
+            .taskTeacher {
+                width: 135px;
+                border-radius: 4px;
+                text-align: center;
+                box-shadow: 0 0 2px 2px #ccc;
+                padding: 26px;
+                p {
+                    color: #0090FF;
+                    padding-bottom: 35px;
+                    border-bottom: 1px solid #F1F1F1;
+                }
+                .text {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
+            }
+            .courses {
+                position: relative;
+                span {
+                    align-items: center;
+                    position: absolute;
+                    left: 20px;
+                    font-size: 12px;
+                    top: 19px;
+                    color: #FFFFFF;
+                    a {
+                        color: #FFFFFF;
+                        font-size: 15px;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+            .courses:nth-child(2) {
+                margin: 0 30px;
+            }
+        }
+        .content-other {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .coursess {
+                position: relative;
+                span {
+                    align-items: center;
+                    position: absolute;
+                    left: 20px;
+                    font-size: 12px;
+                    top: 19px;
+                    color: #FFFFFF;
+                    a {
+                        color: #FFFFFF;
+                        font-size: 15px;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+        
+        .course {
+            text-align: center;
+            margin-top: 150px;
+            margin-bottom: 30px;
+            span {
+                margin-top: 8px;
+                border-bottom: 1px solid #E0D260
+            }
+        }
+        .checkInfo {
+            color: #fff;
+            background: #0090FF;
+            display: block;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 25px;
+            text-align: center;
+            margin: 40px auto;
+        }
+    }
