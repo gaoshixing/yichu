@@ -1,0 +1,83 @@
+@import "config.less";
+.aboutGsx {
+    .content {
+        margin: 0 auto;
+        width: @mainWidth;
+        height: calc(100vh - 80px);
+        .left {
+            float: left;    
+            margin-top: 25px;
+            height: calc(100vh - 120px);
+            display: inline-block;
+            vertical-align: top;
+            width: 130px;
+            text-align: center;
+            border-right: 1px solid #F1F1F1;
+            a {
+                display: block;
+                position: relative;
+                margin: 15px 0;
+                line-height: 1;
+            }
+            .active {
+                border-left: 2px solid #0090FF;
+                color: #0090FF;
+            }
+            // a:hover {
+            //     color: #0090FF;
+                
+            // }
+        }
+        .right,.right1 {
+            padding-left: 38px; 
+            box-sizing: border-box;
+            float: left;
+            display: none;
+            width: 750px; 
+            .title {
+                font-size: 16px;
+                margin: 30px 0;
+                font-weight: 700;
+            }
+            .text {
+                display: block;
+                text-indent: 2em;
+                color: #333333;
+            }
+        }
+        .right1 {
+            .tel {
+                font-size:16px;
+                font-weight: 500;
+                margin-bottom: 20px;
+                display: block;
+            }
+            margin-top: 30px;
+            p {
+                font-size: 14px;
+                line-height: 35px;
+                margin-left: 20px;
+                span {
+                    margin-right: 20px;
+                    color: #333333;
+                }
+            }
+            .OfficialNum {
+                text-align: center;
+                margin-left: 84px;
+                img {
+                    margin-bottom: 12px;
+                }
+                li {
+                    margin-right: 84px;
+                    font-size: 14px;
+                    width: 130px;
+                    float: left;
+                }
+            }
+        }
+        .active1 {
+            display: block;
+        }
+    }
+}

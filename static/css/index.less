@@ -1,7 +1,7 @@
 @import "config.less";
 .page-index {
-    background: #1e1e1e;
-    min-height: 600px;
+    // background: #1e1e1e;
+    min-height: 500px;
     .banner {
         width: 100%;
         .banner-imgs {
@@ -24,14 +24,13 @@
                 width: 10px;
                 height: 10px;
                 margin: 0 5px;
-                border-radius: 50%;
-                border: 1px solid @textColor;
-                background: @textColor;
+                border: 1px solid #fff;
+                background: transparent;
                 cursor: pointer;
             }
             .dots-1 li:hover,
             .dots-1 li.active {
-                background: #000;
+                background: #fff;
             }
             ul {
                 overflow: hidden;
@@ -54,9 +53,11 @@
         }
     }
 }
-.content {
+.main {
+    .content {
         width: @mainWidth;
         margin: 0 auto;
+        margin-top: 40px;
         margin-bottom: 200px;
         .content-t {
             text-align: center;
@@ -98,10 +99,17 @@
             }
             .courses {
                 position: relative;
+                overflow: hidden;
+                &:hover {
+                    & span {
+                        left: 20px;
+                    }
+                }
                 span {
+                    transition: all .8s;
                     align-items: center;
                     position: absolute;
-                    left: 20px;
+                    left: -200px;
                     font-size: 12px;
                     top: 19px;
                     color: #FFFFFF;
@@ -123,13 +131,20 @@
             flex-wrap: wrap;
             .coursess {
                 position: relative;
+                overflow: hidden;
+                &:hover {
+                    & span {
+                        left: 20px;
+                    }
+                }
                 span {
+                    transition: all .8s;
                     align-items: center;
                     position: absolute;
-                    left: 20px;
+                    left: -200px;
                     font-size: 12px;
                     top: 19px;
-                    color: #FFFFFF;
+                    color: #fff;
                     a {
                         color: #FFFFFF;
                         font-size: 15px;
@@ -160,3 +175,23 @@
             margin: 40px auto;
         }
     }
+    .coursel {
+        overflow: hidden;
+        height: 200px;
+        position: relative;
+        .imgs {
+            width: 4500px;
+            position: absolute;
+        }
+        .imgs li {
+            width: 273px;
+            float: left;
+            height: 155px;
+            p {
+                text-align: center;
+                color: #0090FF;
+                font-size: 16px;
+            }
+        }
+    }
+}
